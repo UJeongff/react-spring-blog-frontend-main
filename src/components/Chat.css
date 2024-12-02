@@ -44,12 +44,20 @@
   border-bottom: 1px solid #d9d9d9;
 }
 
+.chat-item .chat-thumbnail {
+    width: 60px;
+    height: 60px;
+    background: #d9d9d9; /* Placeholder 색상 */
+    border-radius: 8px; /* 모서리 둥글게 */
+    margin-left: 16px; /* 간격 조정 */
+  }
+
 .avatar {
   background: #d9d9d9;
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  margin-right: 16px;
+  margin-right: 25px;
 }
 
 .chat-info {
@@ -66,12 +74,6 @@
 .chat-info .message {
   font-size: 16px;
   color: #555555;
-}
-
-.chat-time {
-  font-size: 14px;
-  color: #999999;
-  white-space: nowrap;
 }
 
 /* 하단 내비게이션 */

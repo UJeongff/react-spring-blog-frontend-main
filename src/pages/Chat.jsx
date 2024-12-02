@@ -1,27 +1,27 @@
-import React from "react";
+import React from "react"; 
 import { Link } from "react-router-dom"; // 페이지 이동을 위한 Link
 import "../components/Chat.css";
 
-const ChatItem = ({ username, message, time }) => (
-  <div className="chat-item">
-    <div className="avatar"></div>
-    <div className="chat-info">
-      <div className="username">{username}</div>
-      <div className="message">{message}</div>
+const ChatItem = ({ username, message }) => (
+    <div className="chat-item">
+      <div className="avatar"></div>
+      <div className="chat-info">
+        <div className="username">{username}</div>
+        <div className="message">{message}</div>
+      </div>
+      <div className="chat-thumbnail"></div> 
     </div>
-    <div className="chat-time">{time}</div>
-  </div>
-);
+  );
 
 const Chat = () => {
   const chatData = [
-    { username: "택연맘", message: "네고 가능한가요?", time: "2분 전" },
-    { username: "최강곰", message: "거래 잘 했습니다!", time: "5분 전" },
-    { username: "현콩이", message: "사용감이 어느정도인가요?", time: "10분 전" },
-    { username: "무한이", message: "어디서 볼까요?", time: "15분 전" },
-    { username: "가천인", message: "2시 어떤가요", time: "20분 전" },
-    { username: "먀관", message: "넵 ㅎㅎ", time: "25분 전" },
-    { username: "냠냠이", message: "감사합니다~", time: "30분 전" },
+    { username: "택연맘", message: "네고 가능한가요?" },
+    { username: "최강곰", message: "거래 잘 했습니다!" },
+    { username: "현콩이", message: "사용감이 어느정도인가요?" },
+    { username: "무한이", message: "어디서 볼까요?" },
+    { username: "가천인", message: "2시 어떤가요" },
+    { username: "먀관", message: "넵 ㅎㅎ" },
+    { username: "냠냠이", message: "감사합니다~" },
   ];
 
   return (
@@ -39,7 +39,6 @@ const Chat = () => {
               key={index}
               username={chat.username}
               message={chat.message}
-              time={chat.time}
             />
           ))}
         </div>
