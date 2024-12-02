@@ -3,14 +3,14 @@ import { Link } from "react-router-dom"; // 페이지 이동을 위한 Link
 import "../components/Chat.css";
 
 const ChatItem = ({ username, message }) => (
-    <div className="chat-item">
+    <Link to={`/chat/${username}`} className="chat-item">
       <div className="avatar"></div>
       <div className="chat-info">
         <div className="username">{username}</div>
         <div className="message">{message}</div>
       </div>
       <div className="chat-thumbnail"></div> 
-    </div>
+    </Link>
   );
 
 const Chat = () => {

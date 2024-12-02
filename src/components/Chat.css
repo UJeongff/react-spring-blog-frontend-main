@@ -2,6 +2,7 @@
 .chat,
 .chat * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 .chat {
@@ -44,13 +45,22 @@
   border-bottom: 1px solid #d9d9d9;
 }
 
-.chat-item .chat-thumbnail {
-    width: 60px;
-    height: 60px;
-    background: #d9d9d9; /* Placeholder 색상 */
-    border-radius: 8px; /* 모서리 둥글게 */
-    margin-left: 16px; /* 간격 조정 */
+.chat-item {
+    text-decoration: none;
+    color: inherit;
   }
+  .chat-item:hover {
+    text-decoration: none;
+  }
+  
+
+.chat-item .chat-thumbnail {
+  width: 60px;
+  height: 60px;
+  background: #d9d9d9; /* Placeholder 색상 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  margin-left: 16px; /* 간격 조정 */
+}
 
 .avatar {
   background: #d9d9d9;
@@ -69,11 +79,21 @@
   font-weight: 600;
   margin-bottom: 4px;
   color: #000000;
+  text-decoration: none
 }
 
 .chat-info .message {
   font-size: 16px;
   color: #555555;
+  text-decoration: none
+}
+
+.chat-info .username:focus,
+.chat-info .username:active,
+.chat-info .message:focus,
+.chat-info .message:active {
+  text-decoration: none; /* 클릭, 포커스 상태에서도 밑줄 제거 */
+  outline: none; /* 포커스 시 기본 테두리 제거 */
 }
 
 /* 하단 내비게이션 */
@@ -104,3 +124,5 @@
 .chat-bottom-nav .nav-icon:hover {
   opacity: 1;
 }
+
+

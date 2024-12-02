@@ -4,6 +4,7 @@ import Init from "./pages/Init";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Chat from "./pages/Chat";
+import ChatUserid from "./pages/ChatUserid";
 
 const App = () => {
   return (
@@ -11,13 +12,10 @@ const App = () => {
       <Routes>
         {/* / 경로를 Login 페이지로 설정 */}
         <Route path="/" element={<Login />} />
-        
-        {/* /init 경로를 Init 페이지로 설정 */}
         <Route path="/init" element={<Init />} />
-        
-        {/* 기타 페이지 */}
         <Route path="/home" element={<Home />} />
         <Route path="/chat" element={<Chat />} />
+        <Route path="/chat/:userid" element={<ChatUserid />} />
       </Routes>
     </Router>
   );
