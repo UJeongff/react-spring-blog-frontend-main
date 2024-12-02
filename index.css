@@ -1,8 +1,29 @@
-.init,
-.home {
+/* 모든 페이지에 공통 적용되는 기본 스타일 */
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "PretendardVariable";
+  src: url("/PretendardVariable.ttf");
+}
+
+body {
+  font-family: "PretendardVariable", Arial, sans-serif; /* 기본 글씨체 설정 */
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* 페이지 컨테이너 스타일 */
+.page {
   background: #ffffff;
   height: 844px;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }

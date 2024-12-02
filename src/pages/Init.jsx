@@ -41,41 +41,41 @@ const Init = () => {
 
   return (
     <div className="init-page">
-      <div className="init-box">
-        {/* 헤더 */}
-        <div className="init-header">
-          <img src="/vector.svg" alt="Logo" className="init-vector" />
-          <h1 className="init-title">MungChi Rental</h1>
+        <div className="frame-1">
+            <div className="frame-title">가천대학교 중고거래</div>
         </div>
 
+      <div className="init-box">
         {/* 본문 */}
         <form className="init-form" onSubmit={handleSubmit}>
           <h2 className="init-subtitle">초기 정보 입력</h2>
 
           {/* 입력 필드 */}
-          {[
-            { id: "name", label: "이름", type: "text", placeholder: "홍길동" },
-            { id: "email", label: "학교 이메일", type: "email", placeholder: "@gachon.ac.kr" },
-            { id: "phone", label: "전화번호", type: "tel", placeholder: "010-0000-0000" },
-            { id: "department", label: "학과", type: "text", placeholder: "컴퓨터공학과" },
-            { id: "studentId", label: "학번", type: "text", placeholder: "20231234" },
-            { id: "birth", label: "생년월일", type: "date", placeholder: "YYYY-MM-DD" },
-          ].map(({ id, label, type, placeholder }) => (
-            <div key={id} className="input-group">
-              <label className="input-label" htmlFor={id}>
-                {label}
-              </label>
-              <input
-                id={id}
-                className={`init-input ${errors[id] ? "input-error" : ""}`}
-                type={type}
-                placeholder={placeholder}
-                value={formData[id]}
-                onChange={handleChange}
-              />
-              {errors[id] && <span className="error-message">{errors[id]}</span>}
-            </div>
-          ))}
+          <div className="init-input-wrapper">
+            {[
+              { id: "name", label: "이름", type: "text", placeholder: "홍길동" },
+              { id: "email", label: "학교 이메일", type: "email", placeholder: "@gachon.ac.kr" },
+              { id: "phone", label: "전화번호", type: "tel", placeholder: "010-0000-0000" },
+              { id: "department", label: "학과", type: "text", placeholder: "컴퓨터공학과" },
+              { id: "studentId", label: "학번", type: "text", placeholder: "20231234" },
+              { id: "birth", label: "생년월일", type: "date", placeholder: "YYYY-MM-DD" },
+            ].map(({ id, label, type, placeholder }) => (
+              <div key={id} className="input-group">
+                <label className="input-label" htmlFor={id}>
+                  {label}
+                </label>
+                <input
+                  id={id}
+                  className={`init-input ${errors[id] ? "input-error" : ""}`}
+                  type={type}
+                  placeholder={placeholder}
+                  value={formData[id]}
+                  onChange={handleChange}
+                />
+                {errors[id] && <span className="error-message">{errors[id]}</span>}
+              </div>
+            ))}
+          </div>
 
           {/* 약관 */}
           <div className="init-terms">

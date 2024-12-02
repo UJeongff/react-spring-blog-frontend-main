@@ -10,38 +10,30 @@
   overflow: hidden;
 }
 
-.login .mung-chi-rental {
-    color: #004e96;
+.frame-1 {
+    border-style: solid;
+    border-color: #d9d9d9;
+    border-width: 0px 0px 1px 0px;
+    height: 95px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .frame-1 .frame-title {
+    color: #000000;
     text-align: left;
-    font-family: "Manrope-Bold", sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 34px;
     letter-spacing: -0.025em;
     font-weight: 700;
     position: absolute;
-    right: 120px; /* 이전 156px에서 줄임 */
-    left: 250px; /* 이전 214px에서 늘림 */
-    width: 230px;
-    bottom: 714px;
-    top: 47px;
-    height: 82px;
-  }  
-
-  .login .vector {
-    width: 30px; /* 기존 50px에서 증가 */
-    height: 30px; /* 기존 30px에서 증가 */
-    position: absolute;
-    right: 397px;
-    left: 200px;
-    bottom: 764px;
-    top: 50px;
-    overflow: visible;
+    left: 24px;
+    top: 30px;
   }
 
 .login .create-an-account {
   color: #202224;
   text-align: center;
-  font-family: "PretendardVariable-Bold", sans-serif;
   font-size: 24px;
   letter-spacing: -0.11px;
   font-weight: 700;
@@ -50,46 +42,51 @@
   left: 40px;
   width: 520px;
   bottom: 630px;
-  top: 130px;
+  top: 200px; /* 수정 반영 */
   height: 107px;
 }
 
-.login .input {
+.input-group {
+    position: relative;
+    cursor: pointer; /* 전체 그룹에서 포인터 모양 */
+    top: -100px;
+  }
+
+.input-group .input {
   background: #f1f4f9;
   border-radius: 8px;
   border: 1px solid #d8d8d8;
-  width: 526px;
-  height: 56px;
+  width: 526px; /* 수정 반영 */
+  height: 56px; /* 수정 반영 */
   position: absolute;
-  right: 34px;
+  right: 34px; /* 수정 반영 */
   left: 40px;
-  bottom: 420px;
-  top: 368px;
+  bottom: 420px; /* 수정 반영 */
+  top: 368px; /* 수정 반영 */
 }
 
-.login .devicon-google {
-    width: 30px; /* 기존 38px에서 증가 */
-    height: 30px; /* 기존 25px에서 증가 */
-    position: absolute;
-    right: 407px;
-    left: 200px;
-    bottom: 438px;
-    top: 381px;
-    overflow: visible;
-  }
-  
-.login .div {
+.input-group .devicon-google {
+  width: 30px; /* 수정 반영 */
+  height: 30px; /* 수정 반영 */
+  position: absolute;
+  right: 407px; /* 수정 반영 */
+  left: 200px; /* 수정 반영 */
+  bottom: 438px; /* 수정 반영 */
+  top: 381px; /* 수정 반영 */
+  overflow: visible;
+}
+
+.input-group .div {
   color: #232323;
   text-align: center;
-  font-family: "Manrope-Bold", sans-serif;
   font-size: 20px;
   line-height: 40px;
   font-weight: 700;
   position: absolute;
-  right: 45px;
-  left: 140px;
-  width: 386px;
-  bottom: 429px;
-  top: 374px;
+  right: 45px; /* 수정 반영 */
+  left: 140px; /* 수정 반영 */
+  width: 386px; /* 수정 반영 */
+  bottom: 429px; /* 수정 반영 */
+  top: 374px; /* 수정 반영 */
   height: 40px;
 }

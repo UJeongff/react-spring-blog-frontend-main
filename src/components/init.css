@@ -1,43 +1,58 @@
 /* 헤더 */
 .init-header {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
   }
   
-  .init-vector {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
+  .frame-1 {
+    border-style: solid;
+    border-color: #d9d9d9;
+    border-width: 0px 0px 1px 0px;
+    height: 95px;
+    width: 100%;
+    display: flex;
+    align-items: center;
   }
   
-  .init-title {
-    font-family: "Manrope-Bold", sans-serif;
+  .frame-1 .frame-title {
+    color: #000000;
     font-size: 24px;
-    color: #004e96;
+    line-height: 34px;
+    letter-spacing: -0.025em;
     font-weight: 700;
+    margin-left: 24px;
   }
   
   /* 본문 */
   .init-form {
     width: 100%;
+    margin-top: 20px;
   }
   
   .init-subtitle {
-    font-family: "NunitoSans-Bold", sans-serif;
     font-size: 20px;
     text-align: center;
     margin-bottom: 20px;
     color: #202224;
   }
   
+  /* 입력 필드 그룹 */
   .input-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px; /* 필드 간 간격 유지 */
+    margin-top: 15px; /* 각 그룹 상단 여백 */
+  }
+  
+  /* 입력 필드 전체를 아래로 이동 */
+  .init-input-wrapper {
+    margin-top: 100px; /* 입력 필드 전체를 아래로 이동 */
+    margin-bottom: 0; /* 약관 동의와의 간격 제거 */
+    padding: 0; /* 여분의 패딩 제거 */
   }
   
   .input-label {
-    font-family: "NunitoSans-SemiBold", sans-serif;
     font-size: 14px;
     color: #202224;
     margin-bottom: 5px;
@@ -59,6 +74,7 @@
     outline: none;
   }
   
+  /* 에러 메시지 */
   .error-message {
     color: #e63946;
     font-size: 12px;
@@ -73,10 +89,12 @@
   /* 약관 */
   .init-terms {
     margin: 20px 0;
+    padding: 0;
     font-size: 14px;
     color: #202224;
     display: flex;
     align-items: center;
+    margin-top: -80px; /* 입력 필드 전체를 아래로 이동 */
   }
   
   .terms-checkbox {
@@ -98,7 +116,6 @@
     height: 40px;
     border: none;
     border-radius: 8px;
-    font-family: "NunitoSans-Bold", sans-serif;
     font-size: 16px;
     cursor: pointer;
   }
