@@ -1,0 +1,160 @@
+.profile,
+.profile * {
+  box-sizing: border-box;
+}
+
+.profile {
+  background: #ffffff;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 상단 헤더 */
+.profile .frame-1 {
+  border-style: solid;
+  border-color: #d9d9d9;
+  border-width: 0px 0px 1px 0px;
+  width: 100%;
+  height: 95px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.profile .div {
+  color: #000000;
+  text-align: left;
+  font-family: "PretendardVariable-SemiBold", sans-serif;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: -0.025em;
+  font-weight: 600;
+  margin-left: 24px; /* 더 왼쪽으로 이동 */
+}
+
+/* 사용자 정보 입력 영역 */
+.profile .input {
+  background: #ffffff;
+  border-radius: 8px;
+  border-bottom: 1px solid #d8d8d8;
+  width: 64.1%;
+  height: 4.74%;
+  position: absolute;
+  top: 15.52%;
+  left: 29.23%;
+}
+
+.profile .username2 {
+  color: #202224;
+  text-align: left;
+  font-family: "NunitoSans-SemiBold", sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.06px;
+  font-weight: 600;
+  opacity: 0.8;
+  position: absolute;
+  top: 16.59%;
+  left: 6.92%;
+}
+
+.profile .username3 {
+  color: #000000;
+  text-align: left;
+  font-family: "PretendardVariable-SemiBold", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  position: absolute;
+  top: 16.59%;
+  left: 31.28%;
+}
+
+/* 추가 입력 영역 */
+.profile .input2 {
+  background: #ffffff;
+  border-radius: 8px;
+  border-bottom: 1px solid #d8d8d8;
+  width: 64.1%;
+  height: 4.74%;
+  position: absolute;
+  top: 22.75%;
+  left: 29.23%;
+}
+
+.profile .username4 {
+  color: #202224;
+  font-size: 18px;
+  font-family: "NunitoSans-SemiBold", sans-serif;
+  font-weight: 600;
+  position: absolute;
+  top: 23.82%;
+  left: 6.92%;
+}
+
+.profile .username5 {
+  color: #000000;
+  font-size: 18px;
+  font-family: "PretendardVariable-SemiBold", sans-serif;
+  font-weight: 600;
+  position: absolute;
+  top: 23.82%;
+  left: 31.28%;
+}
+
+/* 학과 정보 입력 영역 */
+.profile .input3 {
+  background: #ffffff;
+  border-radius: 8px;
+  border-bottom: 1px solid #d8d8d8;
+  width: 64.1%;
+  height: 4.74%;
+  position: absolute;
+  top: 31.04%;
+  left: 29.23%;
+}
+
+.profile .username6 {
+  color: #202224;
+  font-size: 18px;
+  font-family: "NunitoSans-SemiBold", sans-serif;
+  font-weight: 600;
+  position: absolute;
+  top: 32.11%;
+  left: 6.92%;
+}
+
+.profile .username7 {
+  color: #000000;
+  font-size: 18px;
+  font-family: "PretendardVariable-SemiBold", sans-serif;
+  font-weight: 600;
+  position: absolute;
+  top: 32.11%;
+  left: 31.28%;
+}
+
+/* 하단 네비게이션 */
+.profile-bottom-nav { /* 이름 변경 */
+    border-top: 1px solid #d9d9d9;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #ffffff;
+  }
+  
+  .profile-bottom-nav .nav-icon {
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+  }
+  
+  .profile-bottom-nav .nav-icon.active {
+    opacity: 1;
+  }

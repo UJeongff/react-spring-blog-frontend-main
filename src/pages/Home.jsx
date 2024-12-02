@@ -65,7 +65,7 @@ const Home = () => {
             alt="Home"
           />
         </Link>
-        <Link to="/user">
+        <Link to="/profile">
           <img className="nav-icon" src="user.svg" alt="User" />
         </Link>
       </div>

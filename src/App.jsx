@@ -5,6 +5,8 @@ import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Chat from "./pages/Chat";
 import ChatUserid from "./pages/ChatUserid";
+import ReviewPage from "./pages/ReviewPage";
+import Profile from "./pages/Profile";
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/chat" element={<Chat />} />
         <Route path="/chat/:userid" element={<ChatUserid />} />
+        <Route path="/review/:postId" element={<ReviewPage />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </Router>
   );

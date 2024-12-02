@@ -1,10 +1,9 @@
 import React from "react";
-import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import "../components/ChatUserid.css";
 
 const ChatUserid = () => {
-  const { userid } = useParams(); // URL에서 userid 추출
+  const { userid, postId  } = useParams(); // URL에서 userid 추출
 
   return (
     <div className="chat-userid">
@@ -16,9 +15,9 @@ const ChatUserid = () => {
       {/* 사용자 정보 및 리뷰쓰기 */}
       <div className="frame-7">
         <div className="review-button">
-          <div className="rectangle2">
+          <Link to={`/review/${postId}`} className="rectangle2">
             <div className="review">리뷰쓰기</div>
-          </div>
+          </Link>
         </div>
 
         <div className="chat-user-item">
@@ -53,8 +52,8 @@ const ChatUserid = () => {
         <Link to="/home">
           <img className="nav-icon" src="/home.svg" alt="Home" />
         </Link>
-        <Link to="/user">
-          <img className="nav-icon" src="/user.svg" alt="User" />
+        <Link to="/profile">
+          <img className="nav-icon" src="user.svg" alt="User" />
         </Link>
       </div>
     </div>

@@ -51,8 +51,8 @@ const Chat = () => {
           <Link to="/home">
             <img className="nav-icon" src="/home.svg" alt="Home" />
           </Link>
-          <Link to="/user">
-            <img className="nav-icon" src="/user.svg" alt="User" />
+          <Link to="/profile">
+          <img className="nav-icon" src="user.svg" alt="User" />
           </Link>
         </div>
       </div>
