@@ -19,7 +19,7 @@ body {
 /* 페이지 컨테이너 스타일 */
 .page {
   background: #ffffff;
-  height: 844px;
+  height: 100vh;
   position: relative;
   overflow: hidden;
   display: flex;

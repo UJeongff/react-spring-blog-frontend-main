@@ -54,7 +54,7 @@ const Home = () => {
       </div>
 
       {/* 하단 내비게이션 */}
-      <div className="bottom-nav">
+      <div className="home-bottom-nav">
         <Link to="/chat">
           <img className="nav-icon" src="chat.svg" alt="Chat" />
         </Link>
