@@ -1,0 +1,123 @@
+/* 헤더 */
+.init-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .init-vector {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .init-title {
+    font-family: "Manrope-Bold", sans-serif;
+    font-size: 24px;
+    color: #004e96;
+    font-weight: 700;
+  }
+  
+  /* 본문 */
+  .init-form {
+    width: 100%;
+  }
+  
+  .init-subtitle {
+    font-family: "NunitoSans-Bold", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #202224;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-label {
+    font-family: "NunitoSans-SemiBold", sans-serif;
+    font-size: 14px;
+    color: #202224;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .init-input {
+    width: 97%;
+    height: 40px;
+    border: 1px solid #d8d8d8;
+    border-radius: 8px;
+    padding: 0 10px;
+    font-size: 14px;
+  }
+  
+  .init-input:focus {
+    border-color: #004e96;
+    box-shadow: 0 0 5px rgba(0, 78, 150, 0.5);
+    outline: none;
+  }
+  
+  .error-message {
+    color: #e63946;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .input-error {
+    border-color: #e63946;
+    box-shadow: 0 0 5px rgba(230, 57, 70, 0.5);
+  }
+  
+  /* 약관 */
+  .init-terms {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #202224;
+    display: flex;
+    align-items: center;
+  }
+  
+  .terms-checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    accent-color: #004e96;
+  }
+  
+  /* 버튼 */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .init-back-button,
+  .init-submit-button {
+    width: 48%;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    font-family: "NunitoSans-Bold", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .init-back-button {
+    background-color: #f1f4f9;
+    color: #004e96;
+  }
+  
+  .init-back-button:hover {
+    background-color: #d8e5f6;
+  }
+  
+  .init-submit-button {
+    background-color: #004e96;
+    color: white;
+  }
+  
+  .init-submit-button:hover {
+    background-color: #003366;
+  }
+  

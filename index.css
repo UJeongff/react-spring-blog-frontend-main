@@ -1,0 +1,8 @@
+.init,
+.home {
+  box-sizing: border-box;
+  background: #ffffff;
+  height: 844px;
+  position: relative;
+  overflow: hidden;
+}

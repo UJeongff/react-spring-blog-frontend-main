@@ -1,0 +1,27 @@
+/* 글로벌 스타일 */
+@font-face {
+  font-family: "Manrope-Bold";
+  src: url("/Manrope-Bold.ttf"); /* 폰트 파일 경로 */
+}
+
+html, body {
+  margin: 0;
+  width: 100%;
+  background-color: rgb(246, 246, 246);
+  display: flex;
+}
+
+#root {
+  background-color: white;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  height: 100%;
+  padding: 0 20px;
+}
+
+/* 모든 요소에 전역 폰트 적용 */
+body * {
+  font-family: "Manrope-Bold", sans-serif;
+}
