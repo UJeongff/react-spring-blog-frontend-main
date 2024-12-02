@@ -53,7 +53,7 @@ const ChatUserid = () => {
           <img className="nav-icon" src="/home.svg" alt="Home" />
         </Link>
         <Link to="/profile">
-          <img className="nav-icon" src="user.svg" alt="User" />
+          <img className="nav-icon" src="/user.svg" alt="User" />
         </Link>
       </div>
     </div>

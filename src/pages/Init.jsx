@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; // useNavigate 가져오기
 import "../components/Init.css";
 
 const Init = () => {
+  const navigate = useNavigate(); // 네비게이션 훅
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -39,11 +41,16 @@ const Init = () => {
     }
   };
 
+  // Back 버튼 클릭 핸들러
+  const handleBack = () => {
+    navigate("/"); // 로그인 페이지로 이동
+  };
+
   return (
     <div className="init-page">
-        <div className="frame-1">
-            <div className="frame-title">가천대학교 중고거래</div>
-        </div>
+      <div className="frame-1">
+        <div className="frame-title">가천대학교 중고거래</div>
+      </div>
 
       <div className="init-box">
         {/* 본문 */}
@@ -87,7 +94,7 @@ const Init = () => {
 
           {/* 버튼 그룹 */}
           <div className="button-group">
-            <button type="button" className="init-back-button">
+            <button type="button" className="init-back-button" onClick={handleBack}>
               취소
             </button>
             <button type="submit" className="init-submit-button">
